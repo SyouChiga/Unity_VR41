@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.publicvr.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\HAL TOKYO VR\\Public VR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Public VR [Testing]"
+        }
+      }
+    }
+  ]
+}
