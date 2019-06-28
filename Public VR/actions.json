@@ -1,51 +1,51 @@
 {
   "actions": [
     {
-      "name": "/actions/Tpad/in/InteractUI",
+      "name": "/actions/default/in/InteractUI",
       "type": "boolean"
     },
     {
-      "name": "/actions/Tpad/in/Teleport",
+      "name": "/actions/default/in/Teleport",
       "type": "boolean"
     },
     {
-      "name": "/actions/Tpad/in/GrabPinch",
+      "name": "/actions/default/in/GrabPinch",
       "type": "boolean"
     },
     {
-      "name": "/actions/Tpad/in/GrabGrip",
+      "name": "/actions/default/in/GrabGrip",
       "type": "boolean"
     },
     {
-      "name": "/actions/Tpad/in/Pose",
+      "name": "/actions/default/in/Pose",
       "type": "pose"
     },
     {
-      "name": "/actions/Tpad/in/SkeletonLeftHand",
+      "name": "/actions/default/in/SkeletonLeftHand",
       "type": "skeleton",
       "skeleton": "/skeleton/hand/left"
     },
     {
-      "name": "/actions/Tpad/in/SkeletonRightHand",
+      "name": "/actions/default/in/SkeletonRightHand",
       "type": "skeleton",
       "skeleton": "/skeleton/hand/right"
     },
     {
-      "name": "/actions/Tpad/in/Squeeze",
+      "name": "/actions/default/in/Squeeze",
       "type": "vector1",
       "requirement": "optional"
     },
     {
-      "name": "/actions/Tpad/in/HeadsetOnHead",
+      "name": "/actions/default/in/HeadsetOnHead",
       "type": "boolean",
       "requirement": "optional"
     },
     {
-      "name": "/actions/Tpad/in/Tpad",
+      "name": "/actions/default/in/Tpad",
       "type": "vector2"
     },
     {
-      "name": "/actions/Tpad/out/Haptic",
+      "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
     {
@@ -80,7 +80,7 @@
   ],
   "action_sets": [
     {
-      "name": "/actions/Tpad",
+      "name": "/actions/default",
       "usage": "single"
     },
     {
