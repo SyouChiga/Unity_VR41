@@ -1,0 +1,7 @@
+{
+  "name": "SteamVR_publicvr",
+  "version": 2,
+  "overwriteOld": true,
+  "removeUnused": true,
+  "imported": false
+}
