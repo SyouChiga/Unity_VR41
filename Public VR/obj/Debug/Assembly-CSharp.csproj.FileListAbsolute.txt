@@ -193,8 +193,6 @@ C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\Unity.SerializationL
 C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\Unity.DataContract.dll
 C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\ExCSS.Unity.dll
 C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
-C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\Boo.Lang.dll
-C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\UnityEditor.UI.dll
 C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\Unity.IvyParser.dll
 C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\Unity.CecilTools.dll
 C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\Unity.Timeline.Editor.pdb
@@ -210,3 +208,17 @@ C:\Users\yuta\Documents\Unity_VR41\Public VR\obj\Debug\Assembly-CSharp.csproj.Co
 C:\Users\yuta\Documents\Unity_VR41\Public VR\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Users\yuta\Documents\Unity_VR41\Public VR\obj\Debug\Assembly-CSharp.dll
 C:\Users\yuta\Documents\Unity_VR41\Public VR\obj\Debug\Assembly-CSharp.pdb
+C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\com.unity.multiplayer-hlapi.Editor.dll
+C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\com.unity.multiplayer-hlapi.Runtime.dll
+C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\com.unity.multiplayer-weaver.Editor.dll
+C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\UnityEditor.SpatialTracking.dll
+C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\UnityEditor.XR.LegacyInputHelpers.dll
+C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\UnityEngine.SpatialTracking.dll
+C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\UnityEngine.XR.LegacyInputHelpers.dll
+C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\com.unity.multiplayer-hlapi.Editor.pdb
+C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\com.unity.multiplayer-weaver.Editor.pdb
+C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\UnityEngine.XR.LegacyInputHelpers.pdb
+C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\UnityEditor.SpatialTracking.pdb
+C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\UnityEngine.SpatialTracking.pdb
+C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\UnityEditor.XR.LegacyInputHelpers.pdb
+C:\Users\yuta\Documents\Unity_VR41\Public VR\Temp\bin\Debug\com.unity.multiplayer-hlapi.Runtime.pdb

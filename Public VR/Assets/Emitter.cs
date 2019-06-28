@@ -42,6 +42,8 @@ public class Emitter : MonoBehaviour
 			GameObject Ball = Instantiate(obj, LeftController.transform.position, Quaternion.identity);
 
 			Ball.GetComponent<Rigidbody>().AddForce(this.transform.forward * 1000.0f);
+
+			Destroy(Ball, 3.0f);
 				
 			
 		}
