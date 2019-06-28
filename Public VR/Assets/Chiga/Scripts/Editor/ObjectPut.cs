@@ -32,7 +32,10 @@ namespace VRGAME
             private void OnGUI()
             {
                 objPut_ = (GameObject)Selection.activeObject;
-                EditorGUILayout.ObjectField(objPut_, typeof(GameObject), false);
+                if (objPut_ != null)
+                {
+                    EditorGUILayout.ObjectField(objPut_, typeof(GameObject), false);
+                }
 
                 GUIUpdate();
 
