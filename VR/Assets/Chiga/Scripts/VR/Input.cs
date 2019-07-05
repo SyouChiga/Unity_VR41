@@ -22,9 +22,9 @@ namespace VR
                 Vector3 up = transform.forward;
                 up.z *= 2.0f;
                 up.x *= 2.0f;
-                obj.GetComponent<Rigidbody>().AddForce(up * 10.0f);
+                obj.GetComponent<Rigidbody>().AddForce(up * 100.0f);
 
-                DestroyObject(obj, 5.0f);
+                Destroy(obj, 5.0f);
             }
         }
 
