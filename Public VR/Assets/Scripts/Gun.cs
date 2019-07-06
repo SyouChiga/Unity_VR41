@@ -21,11 +21,12 @@ public class Gun : MonoBehaviour
     void Update()
     {
         // 右トリガーで弾発射
-        if(actionToShoot.GetStateDown(SteamVR_Input_Sources.RightHand))
+        if(actionToShoot.GetStateDown(SteamVR_Input_Sources.RightHand) || Input.GetMouseButtonDown(0))
         {
             GameObject newBullet = Instantiate(bullet, transform.position, transform.rotation);
             newBullet.GetComponent<Rigidbody>().AddForce(transform.forward * 1000.0f);
             Destroy(newBullet, 3.0f);
         }
+
     }
 }
