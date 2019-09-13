@@ -11,6 +11,7 @@ public class Player : Controller
     public SteamVR_Action_Boolean isGrabAction;
     [SerializeField] private Transform rHand;
     [SerializeField] private float speed;
+    [SerializeField] private GameObject bulletPrefab;
     // Start is called before the first frame update
     void Start()
     {
