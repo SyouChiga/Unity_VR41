@@ -16,11 +16,11 @@ public class Controller : MonoBehaviour
     private bool isMouse;
 
     //bullet
-    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] protected GameObject bulletPrefab;
     //r
-    [SerializeField] private Transform rHand;
+    [SerializeField] protected Transform rHand;
     //l
-    [SerializeField] private Transform lHand;
+    [SerializeField] protected Transform lHand;
 
     void Start()
     {
@@ -58,14 +58,44 @@ public class Controller : MonoBehaviour
     {
         float X_Rotation = Input.GetAxis("Mouse X");
         float Y_Rotation = Input.GetAxis("Mouse Y");
+
+        if(Input.GetKey(KeyCode.UpArrow))
+        {
+            Y_Rotation += 1;
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            Y_Rotation -= 1;
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            X_Rotation += 1;
+        }
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            X_Rotation -= 1;
+        }
+
         verRot.transform.Rotate(0, X_Rotation, 0);
         horRot.transform.Rotate(-Y_Rotation, 0, 0);
     }
 
     protected virtual void RightFunc()
     {
+        Vector3 front = new Vector3();
+        if(isMouse)
+        {
+            front = verRot.transform.forward;
+        }
+        else
+        {
+            front = rHand.forward;
+        }
         GameObject bullet = Instantiate<GameObject>(bulletPrefab, rHand.position, Quaternion.identity);
-        bullet.GetComponent<Rigidbody>().AddForce(rHand.forward*200);
+        bullet.GetComponent<Rigidbody>().AddForce(front*100);
         Destroy(bullet, 5.0f);
     }
 

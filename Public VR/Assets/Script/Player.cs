@@ -7,28 +7,50 @@ using Valve.VR;
 public class Player : Controller
 {
     //var device = SteamVR_
-    public SteamVR_Input_Sources hand;
-    public SteamVR_Action_Boolean isGrabAction;
-    [SerializeField] private Transform rHand;
     [SerializeField] private float speed;
-    [SerializeField] private GameObject bulletPrefab;
+
+    [SerializeField] private GameObject coin;
+
+    enum PLAYER_STATE
+    {
+        WAIT,
+        TOUCH,
+
+    }
+
+    private PLAYER_STATE curState;
+
     // Start is called before the first frame update
     void Start()
     {
-        isGrabAction = SteamVR_Actions._default.InteractUI;
+        vrAction = SteamVR_Actions._default.InteractUI;
+        curState = PLAYER_STATE.WAIT;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(isGrabAction.GetState(SteamVR_Input_Sources.RightHand) || Input.GetKeyDown(KeyCode.Space))
+        if(vrAction.GetState(SteamVR_Input_Sources.RightHand) || Input.GetKeyDown(KeyCode.Space))
         {
             GameObject bullet = Instantiate<GameObject>(bulletPrefab, rHand.position, Quaternion.identity);
             bullet.GetComponent<Rigidbody>().AddForce(rHand.forward);
             Destroy(bullet, 2.0f);
         }
         
+        if(curState == PLAYER_STATE.TOUCH)
+        {
+            
+        }
 
+    }
+
+    /// <summary>
+    /// coinから手を放す
+    /// </summary>
+    public void ExitCoin()
+    {
+        //game oever
 
     }
 
